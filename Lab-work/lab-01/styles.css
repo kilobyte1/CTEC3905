@@ -1,0 +1,7 @@
+body { background: yellow; }
+h1 {color: blue; }
+
+.my-class {
+    background-color: red;
+    color: yellow;
+}
