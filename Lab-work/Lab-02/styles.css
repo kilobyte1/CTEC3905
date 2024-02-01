@@ -3,7 +3,10 @@ nav {
     background-color: black;
     flex-direction: column;
     width: 15vw;
-}
+    flex-basis: 0;
+    order: 2
+    }
+
 nav a {
     color: white;
     padding: 0.5em;
@@ -25,3 +28,7 @@ header, section {
   section {
     padding: 0.5em;
   }
+
+main{
+    display: flex;
+}
