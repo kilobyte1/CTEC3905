@@ -1,34 +1,106 @@
+body {
+	margin: 0;
+}
 nav {
-    display: flex;
-    background-color: black;
-    flex-direction: column;
-    width: 15vw;
-    flex-basis: 0;
-    order: 2
-    }
+  display: flex;
+	flex-direction: column;
+	background-color: #050;
+	flex-basis: 15vw;
+	flex-shrink: 0;
+}
 
 nav a {
-    color: white;
-    padding: 0.5em;
-    margin: 0.5em;
-    background-color: blue;
-    text-decoration: underline; /* this is the default*/
-    transition: background-color 1.5s;
+	color: #afa;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	transition: background-color 0.5s;
 }
 
-nav a:hover{
-    background-color: red;
+nav a:hover {
+	background-color: #272;
 }
+
+header, section, main {
+	overflow: auto;
+}
+
 
 header, section {
-    overflow: auto;
-    box-sizing: border-box;
-  }
+	padding: 0 0.5em;
+}
 
-  section {
-    padding: 0.5em;
-  }
+header {
+	background-color: #0a0;
+}
 
-main{
-    display: flex;
+nav, main {
+	box-sizing: border-box;
+}
+
+section {
+	background-color: #030;
+	color: #afa;
+	overflow: auto;
+}
+
+main {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+body {
+	margin: 0;
+}
+nav {
+  display: flex;
+	flex-direction: column;
+	background-color: #050;
+	flex-basis: 15vw;
+	flex-shrink: 0;
+}
+
+nav a {
+	color: #afa;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	transition: background-color 0.5s;
+}
+
+nav a:hover {
+	background-color: #272;
+}
+
+header, section, main {
+	overflow: auto;
+}
+
+
+header, section {
+	padding: 0 0.5em;
+}
+
+header {
+	background-color: #0a0;
+}
+
+nav, main {
+	box-sizing: border-box;
+}
+
+section {
+	background-color: #030;
+	color: #afa;
+	overflow: auto;
+}
+
+main {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#target {
+	background-color: white;
+	color: black;
+	border: 5px solid black;
+	padding: 0 0.5em;
 }
