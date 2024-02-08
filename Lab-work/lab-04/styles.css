@@ -1,0 +1,47 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    opacity: 0;
+    transform: 0.5s;
+    position: fixed;
+    transform: translate(100vw);
+
+}
+nav.open{
+    transform: translate(0);
+}
+#menuToggler {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+	background-color: rgb(67, 172, 172);
+}
+
+div{
+    padding: 0.2rem 0.5rem;
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 500px) {
+
+    #menuToggler{
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
