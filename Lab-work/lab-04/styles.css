@@ -1,47 +1,77 @@
-nav{
-    display: flex;
-    flex-direction: column;
-    background-color: blue;
-    opacity: 0;
-    transform: 0.5s;
-    position: fixed;
-    transform: translate(100vw);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
+body {
+	font-family: Montserrat, sans-serif;
+	margin: 0;
+	background-color: #eb0;
 }
-nav.open{
-    transform: translate(0);
-}
+
 #menuToggler {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
+	position: fixed;
+	top: 0.5rem;
+	right: 0.5rem;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-size: 3em;
+	text-align: right;
+	line-height: 1em;
+	padding: 0 1rem;
+	z-index: 1;
 }
 
-nav a{
-    color: white;
-    text-decoration: none;
-    padding: 0.2rem 0.5rem;
-    transition: background-color 0.3s;
-}
-nav a:hover {
-	background-color: rgb(67, 172, 172);
-}
-
-div{
-    padding: 0.2rem 0.5rem;
-    font-size: 3rem;
+nav {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0,0,0,0.7);
+	opacity: 0;
+	transform: translateX(100vw);
+	transition: transform 0.4s, opacity 0.6s;
 }
 
-@media screen and (min-width: 500px) {
+nav.open {
+	transition: transform 0.4s, opacity 0.2s;
+	transform: none;
+	opacity: 1;
+}
 
-    #menuToggler{
-        display: none;
-    }
+nav a {
+	font-size: 2em;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	color: white;
+	text-align: center;
+	flex-grow: 1;
+}
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        
-    }
+p {
+	padding: 0 1em;
+	max-width: 600px;
+	margin: 1em auto;
+}
+
+@media screen and (min-width: 515px) {
+
+	#menuToggler {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		transform: none;
+		opacity: 1;
+		height: auto;
+		position: static;
+		justify-content: center;
+	}
+
+	nav a {
+		font-size: 1.3em;
+		flex-grow: 0;
+	}
+
 }
